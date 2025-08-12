@@ -11,7 +11,7 @@ A responsive web app built with **HTML**, **CSS**, and **JavaScript** that uses 
 - Fallback images for missing posters
 
 ## 📸 Preview
-![App Screenshot](images/screenshot.png) <!-- Replace with actual screenshot path -->
+![App Screenshot](C:\Users\Acer\Pictures\Screenshots\Screenshot 2025-08-13 010200) <!-- Replace with actual screenshot path -->
 
 ## 🛠️ Tech Stack
 - **HTML5**
