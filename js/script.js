@@ -412,7 +412,8 @@ function init(){
     displaySlider();
   }
 
-  if (global.currentPage.endsWith('shows.html')) {
+  if (global.currentPage.endsWith('shows.html') ||
+  global.currentPage === '/shows')  {
     displayPopularTvShows();
   }
 
