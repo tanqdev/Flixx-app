@@ -407,26 +407,29 @@ function showAlert(message,className='error'){
 }
 //Init function
 function init(){
-    switch(global.currentPage){
-        case '/':
-        case '/index.html':
-            displayPopularMovies();
-            displaySlider();
-            break;
-        case '/movie-details.html':
-            showMovieDetail();
-            break;
-        case '/search.html':
-            search();
-            break;
-        case '/shows.html':
-            displayPopularTvShows();
-            break;
-        case '/tv-details.html':
-            showTvDetail();
-            break;            
-    }
-    highlightActiveLink();
+  if (global.currentPage.endsWith('index.html') || global.currentPage === '/') {
+    displayPopularMovies();
+    displaySlider();
+  }
+
+  if (global.currentPage.endsWith('shows.html')) {
+    displayPopularTvShows();
+  }
+
+  if (global.currentPage.endsWith('movie-details.html')) {
+    showMovieDetail();
+  }
+
+  if (global.currentPage.endsWith('tv-details.html')) {
+    showTvDetail();
+  }
+
+  if (global.currentPage.endsWith('search.html')) {
+    search();
+  }
+
+  highlightActiveLink();
 }
+
 
 document.addEventListener('DOMContentLoaded',init);
