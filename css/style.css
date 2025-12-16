@@ -9,12 +9,13 @@
 :root {
   --color-primary: #020d18;
   --color-secondary: #f1c40f;
+  --color-white: #ffffff;
 }
 
 body {
   font-family: 'Poppins', sans-serif;
   font-size: 16px;
-  background: var(--color-primary);
+  background: var(--color-white);
   color: #fff;
   overflow-x: hidden;
 }
